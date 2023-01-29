@@ -14,7 +14,7 @@
 
 <body>
     
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+     <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -22,9 +22,14 @@
                     <h2 class="form-font" style="color: var(--bs-black);">Contact me</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form data="d9c4c5a5301735e8b83b7c9c87bb16ad"><input class="form-control" type="email" placeholder="Email address"><input class="form-control" type="text" id="subject" style="margin-top: 13px;" placeholder="subject"><textarea class="form-control" style="margin-top: 10px;" placeholder="   Message" rows="7"></textarea></form>
+                    <form data-bss-recipient="d9c4c5a5301735e8b83b7c9c87bb16ad" data-bss-success-title="Message Sent" data-bss-error-title="Opps, there has been an error in sending the message" data-bss-success-message="I will get back to you shorty.">
+                        <div class="mb-3"><input id="name-2" class="form-control" type="text" name="name" placeholder="Name" /></div>
+                        <div class="mb-3"><input id="email-2" class="form-control" type="email" name="email" placeholder="Email" /></div>
+                        <div class="mb-3"><textarea id="message-2" class="form-control" name="message" rows="7" placeholder="Message"></textarea></div>
+                        <div><button class="btn btn-primary d-block w-100" type="submit">Send </button></div>
+                    </form>
                 </div>
-                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary" type="button" style="border-radius: 25px;width: 108.8px;"><span style="font-weight: normal !important;">Send</span></button></div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button></div>
             </div>
         </div>
     </div>
