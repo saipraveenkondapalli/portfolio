@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="utf-8">
@@ -9,42 +9,12 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/assets/css/styles.css">
-    
 </head>
-
 <body>
-    
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title"></h4>
-                    <h2 class="form-font" style="color: var(--bs-black);">Contact me</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form data="d9c4c5a5301735e8b83b7c9c87bb16ad"><input class="form-control" type="email" placeholder="Email address"><input class="form-control" type="text" id="subject" style="margin-top: 13px;" placeholder="subject"><textarea class="form-control" style="margin-top: 10px;" placeholder="   Message" rows="7"></textarea></form>
-                </div>
-                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary" type="button" style="border-radius: 25px;width: 108.8px;"><span style="font-weight: normal !important;">Send</span></button></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-2" style="width: 989px;">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" style="font-size: 19px;">The Global Entrepreneurship Exchange (GE2)</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>The Global Entrepreneurship Exchange (GE2) Workshop provides entrepreneurship education with a unique global experience, and applies concepts to the real world. The workshop is designed to explore the importance of entrepreneurship and innovation in today's global economy, and to cultivate an entrepreneurial mind-set. As part of this, students work in multi-disciplinary, multi-cultural teams to develop their ideas into vetted business concepts The workshop is organized by the Manning school of business, university of&nbsp;Massachusetts, Lowell, USA.<br><br></p>
-                    <h4>July 2021</h4>
-                    <p>I had collaborated with students from four countries - India, US, Africa,&nbsp; Burma and won the competition in the First Place</p>
-                    <h4>July 2022 (Team Leader)</h4>
-                    <p>Led a team consisting of business and engineering students from China and India. Guided them using my experience from 2021s workshop competition and won the competition in the first place.</p>
-                </div>
-                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
-            </div>
-        </div>
-    </div>
+<div id="success-alert" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success!</strong> Your message has been sent successfully.
+</div>
+
     <header class="header">
         <div class="container">
             <div class="row align-items-center">
@@ -63,7 +33,7 @@
                 <div class="col-12 col-md-auto">
                     <div class="d-flex dark-mode-switch">
                         <div class="mx-auto form-check form-switch mx-md-0"><input type="checkbox" class="form-check-input me-2" id="darkSwitch" checked><label class="form-label custom-control-label" for="darkSwitch">Dark Mode</label></div>
-                    </div><button class="btn btn-primary" type="button" style="font-size: 16px;border-radius: 28px;font-family: -apple-system,BlinkMacSystemFont, sans-serif;background: rgb(13, 110, 253);" data-bs-target="#modal-1" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                    </div><button class="btn btn-primary" type="button" style="font-size: 16px;border-radius: 28px;font-family: -apple-system,BlinkMacSystemFont, sans-serif;background: rgb(13, 110, 253);" onclick="window.location.href = 'contact.html' "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                             <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                             <path d="M501.6 4.186c-7.594-5.156-17.41-5.594-25.44-1.063L12.12 267.1C4.184 271.7-.5037 280.3 .0431 289.4c.5469 9.125 6.234 17.16 14.66 20.69l153.3 64.38v113.5c0 8.781 4.797 16.84 12.5 21.06C184.1 511 188 512 191.1 512c4.516 0 9.038-1.281 12.99-3.812l111.2-71.46l98.56 41.4c2.984 1.25 6.141 1.875 9.297 1.875c4.078 0 8.141-1.031 11.78-3.094c6.453-3.625 10.88-10.06 11.95-17.38l64-432C513.1 18.44 509.1 9.373 501.6 4.186zM369.3 119.2l-187.1 208.9L78.23 284.7L369.3 119.2zM215.1 444v-49.36l46.45 19.51L215.1 444zM404.8 421.9l-176.6-74.19l224.6-249.5L404.8 421.9z"></path>
                         </svg>&nbsp;Contact Me</button>
@@ -245,23 +215,33 @@
                         </div>
                     </div>
                 </aside>
-                <aside class="credits aside section"></aside>
+         s
             </div>
-            <section class="github section">
-                <div class="shadow-sm section-inner rounded">
-                    <h2 class="heading">My GitHub</h2>
-                    <div class="calendar">
-                        <!-- Loading stuff -->
-                        Loading the data just for you.
-                    </div>
-                    <br> <hr> <br>
-                    <div id="feed"></div>
-                    <p></p>
+            <div class="row">
+                <div class="calendar">
                 </div>
-            </section>
+                <br><br> <hr>
+                <div id = "feed" >
+
+                </div>
+            </div>
+
+
         </div>
     </div>
-    
+
+
+<script>
+  window.onload = function() {
+    const formSuccess = localStorage.getItem("formSuccess");
+
+    if (formSuccess === "true") {
+      document.getElementById("success-notification").classList.remove("d-none");
+      localStorage.removeItem("formSuccess");
+    }
+  };
+</script>
+
     <footer class="footer">
         <div class="container text-center"><small class="copyright">Thank you for visiting</small></div>
     </footer>
@@ -279,7 +259,10 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/custom.js"></script>
 
-    <script>
+
+
+
+    <!--script>
         GitHubCalendar(".calendar", "saipraveenkondapalli");
         // or enable responsive functionality
         //GitHubCalendar(".calendar", "saipraveenkondapalli", { responsive: true });
@@ -291,13 +274,13 @@
         selector: "#feed",
         limit: 5, // optional
       });
-      </script>
+      </script-->
 <style>
     span{
         padding: 4px;
     }
 </style>
-<script>
+<!--script>
     var targetNode = document.body;
     var config = { attributes: true, childList: true, subtree: true };
     var observer = new MutationObserver(function(mutationsList) {
@@ -312,9 +295,18 @@
       }
     });
     observer.observe(targetNode, config);
-  </script>
-  
+  </script-->
 
+<script>
+  setTimeout(function() {
+    var alert = document.getElementById("success-alert");
+    alert.classList.remove("show");
+    alert.classList.add("fade");
+    setTimeout(function() {
+      alert.style.display = "none";
+    }, 500);
+  }, 3000);
+</script>
 </body>
 
 </html>
