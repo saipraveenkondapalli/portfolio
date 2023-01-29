@@ -1,0 +1,69 @@
+<html lang="en" onclick>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="icon" type="image/webp" sizes="637x637" href="assets/img/fotor_2023-1-22_16_51_39.webp">
+    <link rel="stylesheet" href="assets/css/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/assets/css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css">
+    <title>Interview Prep Pro</title>
+</head>
+
+<body style="background-color: #353739;">
+    <nav class="navbar navbar-light navbar-expand-md" style="color: white;background: black;">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="color: white;">Sai Praveen</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1" style="color: white;"><span class="visually-hidden" style="color: white;">Toggle navigation</span><span class="navbar-toggler-icon" style="color: white;"></span></button>
+            <div id="navcol-1" class="collapse navbar-collapse" style="color: white;">
+                <ul class="navbar-nav" style="color: white;">
+                    <li class="nav-item" style="color: white;"><a class="nav-link active" href="#" style="color: white;">Skills</a></li>
+                    <li class="nav-item" style="color: white;"><a class="nav-link" href="#" style="color: white;">Projects</a></li>
+                    <li class="nav-item" style="color: white;"><a class="nav-link" href="#" style="color: white;">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 id="weblink" class="projectname" style="text-align: center;color: var(--bs-yellow);padding: 41px;" onclick="window.open(&#39;https://www.leetcodeproblems.tech&#39;, &#39;_blank&#39;);">Interview Prep Pro</h1>
+    <div class="container align-items-center">
+        <h2 style="color: var(--bs-yellow);">Tech Stack</h2><img class="rounded img-fluid" src="assets/img/interview.png" alt="tech stack" style="padding: 15px;" />
+        <div class="row">
+            <div class="col d-flex justify-content-center align-self-center"><button class="btn btn-primary" type="button" style="font-size: 16px;border-radius: 28px;font-family: -apple-system,BlinkMacSystemFont, sans-serif;" onclick="window.open(&#39;https://www.leetcodeproblems.tech&#39;, &#39;_blank&#39;);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor">
+                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M285.6 444.1C279.8 458.3 264.8 466.3 249.8 463.4C234.8 460.4 223.1 447.3 223.1 432V256H47.1C32.71 256 19.55 245.2 16.6 230.2C13.65 215.2 21.73 200.2 35.88 194.4L387.9 50.38C399.8 45.5 413.5 48.26 422.6 57.37C431.7 66.49 434.5 80.19 429.6 92.12L285.6 444.1z"></path>
+                    </svg> Visit Site</button></div>
+        </div>
+        <div class="container-fluid">
+            <h2 style="color: var(--bs-yellow);">About</h2>
+            <p style="color: var(--bs-gray-200);">&quot;Interview Prep Pro&quot; is a project designed to help individuals prepare for coding interviews at top technology companies. It is built using Python, MongoDB, and Bootstrap, and features over 1200 coding questions from 150+ of the industry&#39;s leading companies. The questions are organized by category and company, making it easy for users to find relevant content and start practicing their skills. Additionally, the project includes direct links to Leetcode practice problems, providing users with a comprehensive resource for coding interview preparation. The project is also in progress and it is Enabling users to contribute questions to keep the resource relevant to the current job market. This feature will allow the project to stay up-to-date with the latest trends and technologies in the industry, and ensure that users are well-prepared for the types of questions they may encounter in real-world interviews.</p>
+        </div>
+        <div class="container-fluid">
+            <h2 id = "repo" style="color: var(--bs-yellow);" onclick='window.open("https://www.github.com/saipraveenkondapalli/leetcode-learning", "target=_blank")'>Github Activity</h2>
+        </div>
+        <div id="feed" class="ghfeed"></div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        GitHubActivity.feed({
+            username: "saipraveenkondapalli",
+            repository: "leetcode-learning", // optional
+            selector: "#feed",
+            limit: 30, // optional
+          });
+          </script>
+<style>
+    #repo {
+        cursor: pointer;
+    }
+    #weblink {
+        cursor: pointer;
+    }
+</style>
+</body>
+
+</html>
