@@ -14,6 +14,7 @@ GitHubActivity.feed({
 
 
 
+
 var targetNode = document.body;
     var config = { attributes: true, childList: true, subtree: true };
     var observer = new MutationObserver(function(mutationsList) {
