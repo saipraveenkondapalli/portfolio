@@ -8,7 +8,6 @@
     <link rel="icon" type="image/webp" sizes="637x637" href="assets/img/fotor_2023-1-22_16_51_39.webp">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/assets/plugins/bootstrap/css/bootstrap.min.css">
-    
     <link rel="stylesheet" href="assets/css/assets/css/styles.css">
     
 </head>
@@ -143,23 +142,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="github section">
-                    <div class="shadow-sm section-inner rounded">
-                        <h2 class="heading">My GitHub</h2>
-                        <div class="calendar">
-                            <!-- Loading stuff -->
-                            <p></p>
-                        <p></p>
-                            Loading the data just for you.
-                        </div>
-                        <br>
-                        <hr>
-                        <br>
-                        
-                        <div id="feed" class="ghfeed"></div>
-                        <p></p>
-                    </div>
-                </section>
+                
             </div>
             <div class="col-12 col-lg-4 secondary">
                 <aside class="info aside section">
@@ -264,23 +247,25 @@
                 </aside>
                 <aside class="credits aside section"></aside>
             </div>
+            <section class="github section">
+                <div class="shadow-sm section-inner rounded">
+                    <h2 class="heading">My GitHub</h2>
+                    <div class="calendar">
+                        <!-- Loading stuff -->
+                        Loading the data just for you.
+                    </div>
+                    <br> <hr> <br>
+                    <div id="feed"></div>
+                    <p></p>
+                </div>
+            </section>
         </div>
     </div>
+    
     <footer class="footer">
         <div class="container text-center"><small class="copyright">Thank you for visiting</small></div>
     </footer>
 
-<!--script>
-    $(document).ready(function() {
-  $("#myList li").click(function() {
-    $("#modal-2").show();
-  });
-
-  $(".close").click(function() {
-    $("#modal-2").hide();
-  });
-});
-</script-->
     <link rel="stylesheet" href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css">
     <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css">
     <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css">
@@ -304,7 +289,7 @@
         username: "saipraveenkondapalli",
         //repository: "your-repo", // optional
         selector: "#feed",
-        limit: 20, // optional
+        limit: 5, // optional
       });
       </script>
 <style>
