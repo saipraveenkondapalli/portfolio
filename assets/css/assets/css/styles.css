@@ -759,23 +759,9 @@ body[data-theme="dark"] .aside .subheading {
   color: rgba(255, 255, 255, 0.9);
 }
 
-body[data-theme="dark"] .gha-header, body[data-theme="dark"] .gha-footer, body[data-theme="dark"] .gha-feed {
-  background: #17191c;
-  border-color: rgba(255, 255, 255, 0.1);
-  color: #3AAA64;
-}
 
-body[data-theme="dark"] .gha-feed a {
-  color: #3AAA64;
-}
 
-body[data-theme="dark"] .gha-header > .gha-github-icon, body[data-theme="dark"] .gha-header > .gha-user-info > a, body[data-theme="dark"] .gha-header > .gha-user-info > p > a {
-  color: rgba(255, 255, 255, 0.9);
-}
 
-body[data-theme="dark"] .gha-activity {
-  border-color: #333;
-}
 
 body[data-theme="dark"] .gha-gravatar img {
   border: 3px solid #333;
