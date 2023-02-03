@@ -1,22 +1,15 @@
-// ----------------------------------------------------- GIT HUB -------------------------------------------------------
+/* ----------------------------------------------------- GIT HUB -------------------------------------------------------
 GitHubCalendar(".calendar", "saipraveenkondapalli");
         // or enable responsive functionality
         GitHubCalendar(".calendar", "saipraveenkondapalli", { responsive: true });
 
-
-GitHubActivity.feed({
-            username: "saipraveenkondapalli",
-            //repository: "your-repo", // optional
-            selector: "#feed",
-            limit:5, // optional
-        });
 
 
 // ---------------------------------------------------------------------------------------------------------------------
 
 //----------------------------------------------------------------------------------------------------------------------
 
-// -----------------------------------------------------Remove Profile Pic----------------------------------------------
+/* -----------------------------------------------------Remove Profile Pic----------------------------------------------
 var targetNode = document.body;
     var config = { attributes: true, childList: true, subtree: true };
     var observer = new MutationObserver(function(mutationsList) {
@@ -32,4 +25,4 @@ var targetNode = document.body;
     });
     observer.observe(targetNode, config);
 
-//----------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------*/
