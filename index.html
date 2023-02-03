@@ -2,55 +2,81 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport">
     <title>Sai Praveen</title>
-    <link rel="icon" type="image/webp" sizes="637x637" href="assets/img/fotor_2023-1-22_16_51_39.webp">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/assets/css/styles.css">
+    <link href="assets/img/fotor_2023-1-22_16_51_39.webp" rel="icon" sizes="637x637" type="image/webp">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/assets/css/styles.css" rel="stylesheet">
 </head>
-<body>
-<div id="modal-1" class="modal fade" role="dialog" tabindex="-1">
+<body data-theme="dark">
+<div class="modal fade" id="modal-1" role="dialog" tabindex="-1">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title"></h4>
-                <h2 class="form-font" style="color: var(--bs-black);">Contact Me</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h2 class="form-font" style="color: var(--bs-black);">Contact Me</h2>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
             </div>
             <div class="modal-body">
-                <form data-bss-success-title="Message Sent" data-bss-error-title="Opps, there has been an error in sending the message" data-bss-success-message="I will get back to you shorty." data-bss-recipient="d9c4c5a5301735e8b83b7c9c87bb16ad">
-                    <div class="mb-3"><input id="name-2" class="form-control" type="text" name="name" placeholder="Name" /></div>
-                    <div class="mb-3"><input id="email-2" class="form-control" type="email" name="email" placeholder="Email" /></div>
-                    <div class="mb-3"><textarea id="message-2" class="form-control" name="message" rows="7" placeholder="Message"></textarea></div>
-                    <div><button class="btn btn-primary d-block w-100" type="submit">Send </button></div>
+                <form data-bss-error-title="Opps, there has been an error in sending the message"
+                      data-bss-recipient="d9c4c5a5301735e8b83b7c9c87bb16ad"
+                      data-bss-success-message="I will get back to you shorty."
+                      data-bss-success-title="Message Sent">
+                    <div class="mb-3"><input class="form-control" id="name-2" name="name" placeholder="Name"
+                                             type="text"/></div>
+                    <div class="mb-3"><input class="form-control" id="email-2" name="email" placeholder="Email"
+                                             type="email"/></div>
+                    <div class="mb-3"><textarea class="form-control" id="message-2" name="message" placeholder="Message"
+                                                rows="7"></textarea></div>
+                    <div>
+                        <button class="btn btn-primary d-block w-100" type="submit">Send</button>
+                    </div>
                 </form>
             </div>
-            <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button></div>
+            <div class="modal-footer">
+                <button class="btn btn-light" data-bs-dismiss="modal" type="button">Close</button>
+            </div>
         </div>
     </div>
 </div>
 <header class="header">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col"><img class="rounded-circle img-fluid float-start profile-image" src="assets/img/fotor_2023-1-22_16_51_39.webp" alt="profile image" width="149" height="149">
+            <div class="col"><img alt="profile image"
+                                  class="rounded-circle img-fluid float-start profile-image" height="149"
+                                  src="assets/img/fotor_2023-1-22_16_51_39.webp"
+                                  width="149">
                 <div class="profile-content">
                     <h1 class="name">Sai Praveen Kondapalli</h1>
                     <h2 class="desc">Software Developer</h2>
                     <ul class="list-inline social">
-                        <li class="list-inline-item list-inline-item"><i class="fab fa-twitter" onclick="window.open(&#39;https://www.twitter.com/saipraveen707/&#39;, &#39;_blank&#39;)"></i></li>
-                        <li class="list-inline-item list-inline-item"><i class="fab fa-linkedin-in" onclick="window.open(&#39;https://www.linkedin.com/in/sai-praveen-kondapalli/&#39;, &#39;_blank&#39;)"></i></li>
-                        <li class="list-inline-item list-inline-item"><i class="fab fa-github" onclick="window.open(&#39;https://github.com/saipraveenkondapalli&#39;, &#39;_blank&#39;)"></i></li>
+                        <li class="list-inline-item list-inline-item"><i class="fab fa-twitter"
+                                                                         onclick="window.open(&#39;https://www.twitter.com/saipraveen707/&#39;, &#39;_blank&#39;)"></i>
+                        </li>
+                        <li class="list-inline-item list-inline-item"><i class="fab fa-linkedin-in"
+                                                                         onclick="window.open(&#39;https://www.linkedin.com/in/sai-praveen-kondapalli/&#39;, &#39;_blank&#39;)"></i>
+                        </li>
+                        <li class="list-inline-item list-inline-item"><i class="fab fa-github"
+                                                                         onclick="window.open(&#39;https://github.com/saipraveenkondapalli&#39;, &#39;_blank&#39;)"></i>
+                        </li>
 
                     </ul>
                 </div>
             </div>
             <div class="col-12 col-md-auto">
-                <div class="d-flex dark-mode-switch">
+                <!--div class="d-flex dark-mode-switch">
                     <div class="mx-auto form-check form-switch mx-md-0"><input type="checkbox" class="form-check-input me-2" id="darkSwitch" checked><label class="form-label custom-control-label" for="darkSwitch">Dark Mode</label></div>
-                </div><button class="btn btn-primary" type="button" data-bs-target = "#modal-1" data-bs-toggle="modal" style="font-size: 16px;border-radius: 28px;font-family: -apple-system,BlinkMacSystemFont, sans-serif;background: rgb(13, 110, 253);" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
-                <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                <path d="M501.6 4.186c-7.594-5.156-17.41-5.594-25.44-1.063L12.12 267.1C4.184 271.7-.5037 280.3 .0431 289.4c.5469 9.125 6.234 17.16 14.66 20.69l153.3 64.38v113.5c0 8.781 4.797 16.84 12.5 21.06C184.1 511 188 512 191.1 512c4.516 0 9.038-1.281 12.99-3.812l111.2-71.46l98.56 41.4c2.984 1.25 6.141 1.875 9.297 1.875c4.078 0 8.141-1.031 11.78-3.094c6.453-3.625 10.88-10.06 11.95-17.38l64-432C513.1 18.44 509.1 9.373 501.6 4.186zM369.3 119.2l-187.1 208.9L78.23 284.7L369.3 119.2zM215.1 444v-49.36l46.45 19.51L215.1 444zM404.8 421.9l-176.6-74.19l224.6-249.5L404.8 421.9z"></path>
-            </svg>&nbsp;Contact Me</button>
+                </div-->
+                <button class="btn btn-primary" data-bs-target="#modal-1" data-bs-toggle="modal"
+                        style="font-size: 16px;border-radius: 28px;font-family: -apple-system,BlinkMacSystemFont, sans-serif;background: rgb(13, 110, 253);"
+                        type="button">
+                    <svg fill="currentColor" height="1em" viewBox="0 0 512 512" width="1em"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M501.6 4.186c-7.594-5.156-17.41-5.594-25.44-1.063L12.12 267.1C4.184 271.7-.5037 280.3 .0431 289.4c.5469 9.125 6.234 17.16 14.66 20.69l153.3 64.38v113.5c0 8.781 4.797 16.84 12.5 21.06C184.1 511 188 512 191.1 512c4.516 0 9.038-1.281 12.99-3.812l111.2-71.46l98.56 41.4c2.984 1.25 6.141 1.875 9.297 1.875c4.078 0 8.141-1.031 11.78-3.094c6.453-3.625 10.88-10.06 11.95-17.38l64-432C513.1 18.44 509.1 9.373 501.6 4.186zM369.3 119.2l-187.1 208.9L78.23 284.7L369.3 119.2zM215.1 444v-49.36l46.45 19.51L215.1 444zM404.8 421.9l-176.6-74.19l224.6-249.5L404.8 421.9z"></path>
+                    </svg>&nbsp;Contact Me
+                </button>
             </div>
         </div>
     </div>
@@ -62,7 +88,16 @@
                 <div class="shadow-sm section-inner rounded">
                     <h2 class="heading">About Me</h2>
                     <div class="content">
-                        <p>As a final year electronics student, I have a strong background in problem-solving and understanding complex systems. I am proficient in programming and have experience with a variety of programming languages such as Python, Java, C and I have experience in databases such as SQL like sqlite and MySQL and no SQL databases like MongoDB. I am also familiar with testing libraries like Pytest and selenium which give me an edge in software development. My knowledge of microcontrollers and embedded systems makes me a valuable asset in software engineering roles that involve working with hardware. I possess strong analytical skills and have the ability to understand requirements and develop effective solutions. My technical expertise and problem-solving abilities make me a strong candidate for software engineering positions.</p>
+                        <p>As a final year electronics student, I have a strong background in problem-solving and
+                            understanding complex systems. I am proficient in programming and have experience with a
+                            variety of programming languages such as Python, Java, C and I have experience in databases
+                            such as SQL like sqlite and MySQL and no SQL databases like MongoDB. I am also familiar with
+                            testing libraries like Pytest and selenium which give me an edge in software development. My
+                            knowledge of microcontrollers and embedded systems makes me a valuable asset in software
+                            engineering roles that involve working with hardware. I possess strong analytical skills and
+                            have the ability to understand requirements and develop effective solutions. My technical
+                            expertise and problem-solving abilities make me a strong candidate for software engineering
+                            positions.</p>
                     </div>
                 </div>
             </section>
@@ -72,30 +107,58 @@
                     <h2 class="heading">Latest Projects</h2>
                     <div class="content">
                         <div class="text-center item featured">
-                            <div class="featured-image has-ribbon"><a href="interview.html" target="_blank"><img class="rounded img-fluid shadow-sm project-image" src="assets/img/projects/leetcode.png" alt="project name"></a>
+                            <div class="featured-image has-ribbon"><a href="interview.html" target="_blank"><img
+                                    alt="project name"
+                                    class="rounded img-fluid shadow-sm project-image"
+                                    src="assets/img/projects/leetcode.png"></a>
                                 <div class="ribbon">
                                     <div class="text"><span>New</span></div>
                                 </div>
                             </div>
-                            <h3 class="title mb-3"><a href="interview.html" target="_blank">Interview Prep Pro</Pre></a></h3>
+                            <h3 class="title mb-3"><a href="interview.html" target="_blank">Interview Prep Pro</Pre></a>
+                            </h3>
                             <div class="text-start desc">
-                                <p>"Interview Prep Pro" is a project that helps individuals prepare for coding interviews at top technology companies. It features over 1200 coding questions from 150+ companies, organized by category and company. It also includes links to Leetcode problems and has a feature that allows users to contribute questions to keep the resource relevant to the current job market.</p>
-                            </div><button onclick="window.open('interview.html', target='_blank')" class="btn btn-primary" type="button" style="font-size: 16px;border-radius: 28px;font-family: -apple-system,BlinkMacSystemFont, sans-serif;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor">
-                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                            <path d="M285.6 444.1C279.8 458.3 264.8 466.3 249.8 463.4C234.8 460.4 223.1 447.3 223.1 432V256H47.1C32.71 256 19.55 245.2 16.6 230.2C13.65 215.2 21.73 200.2 35.88 194.4L387.9 50.38C399.8 45.5 413.5 48.26 422.6 57.37C431.7 66.49 434.5 80.19 429.6 92.12L285.6 444.1z"></path>
-                        </svg>&nbsp;Learn more</button>
+                                <p>"Interview Prep Pro" is a project that helps individuals prepare for coding
+                                    interviews at top technology companies. It features over 1200 coding questions from
+                                    150+ companies, organized by category and company. It also includes links to
+                                    Leetcode problems and has a feature that allows users to contribute questions to
+                                    keep the resource relevant to the current job market.</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="window.open('interview.html', target='_blank')"
+                                    style="font-size: 16px;border-radius: 28px;font-family: -apple-system,BlinkMacSystemFont, sans-serif;"
+                                    type="button">
+                                <svg fill="currentColor" height="1em" viewBox="-32 0 512 512" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M285.6 444.1C279.8 458.3 264.8 466.3 249.8 463.4C234.8 460.4 223.1 447.3 223.1 432V256H47.1C32.71 256 19.55 245.2 16.6 230.2C13.65 215.2 21.73 200.2 35.88 194.4L387.9 50.38C399.8 45.5 413.5 48.26 422.6 57.37C431.7 66.49 434.5 80.19 429.6 92.12L285.6 444.1z"></path>
+                                </svg>&nbsp;Learn more
+                            </button>
                         </div>
                         <hr class="divider">
-                        <div class="row item"><a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/" target="_blank">
-                            <img class="img-fluid project-image rounded shadow-sm" src="assets/img/pressclub.jpg" alt="student club portal">
+                        <div class="row item"><a class="col-md-4 col-12"
+                                                 href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/"
+                                                 target="_blank">
+                            <img alt="student club portal" class="img-fluid project-image rounded shadow-sm"
+                                 src="assets/img/pressclub.jpg">
                         </a>
                             <div class="col-12 col-md-8 desc">
                                 <h3 class="title">Student Club Portal</h3>
-                                <p class="mb-2">"Student Club Portal" is a website aimed at streamlining and automating the management of activities for the "Press Club" at Pragati Engineering College in Surampalem, India. The website provides an efficient and organized platform to handle various club-related tasks, including report writing, grammatical checking, attendance tracking, and more.</p>
-                                <p><button class="btn btn-primary" type="button" onclick="window.open('studentclub.html', '_blank')" style="font-size: 16px;border-radius: 28px;font-family: -apple-system,BlinkMacSystemFont, sans-serif;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor">
-                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                                    <path d="M285.6 444.1C279.8 458.3 264.8 466.3 249.8 463.4C234.8 460.4 223.1 447.3 223.1 432V256H47.1C32.71 256 19.55 245.2 16.6 230.2C13.65 215.2 21.73 200.2 35.88 194.4L387.9 50.38C399.8 45.5 413.5 48.26 422.6 57.37C431.7 66.49 434.5 80.19 429.6 92.12L285.6 444.1z"></path>
-                                </svg>&nbsp;Learn more</button></p>
+                                <p class="mb-2">"Student Club Portal" is a website aimed at streamlining and automating
+                                    the management of activities for the "Press Club" at Pragati Engineering College in
+                                    Surampalem, India. The website provides an efficient and organized platform to
+                                    handle various club-related tasks, including report writing, grammatical checking,
+                                    attendance tracking, and more.</p>
+                                <p>
+                                    <button class="btn btn-primary" onclick="window.open('studentclub.html', '_blank')"
+                                            style="font-size: 16px;border-radius: 28px;font-family: -apple-system,BlinkMacSystemFont, sans-serif;"
+                                            type="button">
+                                        <svg fill="currentColor" height="1em" viewBox="-32 0 512 512"
+                                             width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                            <path d="M285.6 444.1C279.8 458.3 264.8 466.3 249.8 463.4C234.8 460.4 223.1 447.3 223.1 432V256H47.1C32.71 256 19.55 245.2 16.6 230.2C13.65 215.2 21.73 200.2 35.88 194.4L387.9 50.38C399.8 45.5 413.5 48.26 422.6 57.37C431.7 66.49 434.5 80.19 429.6 92.12L285.6 444.1z"></path>
+                                        </svg>&nbsp;Learn more
+                                    </button>
+                                </p>
                             </div>
                         </div>
                         <!--div class="row item"><a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/" target="_blank">
@@ -117,7 +180,12 @@
                         <div class="item"></div>
                         <div class="item">
                             <h3 class="title">AWS Intern - Eduskills Foundation 03/2022 - 05/2022</h3>
-                            <p>I successfully assisted in the deployment of a team project on AWS, utilizing my extensive knowledge of EC2 and S3. This led to significant cost savings through data migration to AWS and server management optimization. Additionally, I was responsible for IAM user management, ensuring that team members had appropriate access based on their roles. Furthermore, I improved website performance by implementing CloudFront, which resulted in a 2X increase in loading speed and a smoother user experience.
+                            <p>I successfully assisted in the deployment of a team project on AWS, utilizing my
+                                extensive knowledge of EC2 and S3. This led to significant cost savings through data
+                                migration to AWS and server management optimization. Additionally, I was responsible for
+                                IAM user management, ensuring that team members had appropriate access based on their
+                                roles. Furthermore, I improved website performance by implementing CloudFront, which
+                                resulted in a 2X increase in loading speed and a smoother user experience.
                         </div>
                         <!--div class="item">
                             <h3 class="title">Software Engineer - <span class="place"><a href="#">eBay</a></span><span class="year">(2018 - 2019)</span></h3>
@@ -134,10 +202,13 @@
                     <h2 class="heading sr-only">Basic Information</h2>
                     <div class="content">
                         <ul class="list-unstyled">
-                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor" style="font-size: 20px;">
-                                <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                                <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path>
-                            </svg>&nbsp; Andhra Pradesh, India</li>
+                            <li>
+                                <svg fill="currentColor" height="1em" style="font-size: 20px;" viewBox="-64 0 512 512"
+                                     width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path>
+                                </svg>&nbsp; Andhra Pradesh, India
+                            </li>
                             <li style="width: 237px;">saipraveenkondapalli@gmail.com</li>
                         </ul>
                     </div>
@@ -151,36 +222,39 @@
                         <div class="skillset">
                             <div class="item">
                                 <h3 class="level-title">Programming Languages</h3>
-                                <span class = 'd-inline-flex' name = "skill" style="font-size: 12px; border-style: solid;border-radius: 15px;;margin: 2px;">   Python  </span>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px;;margin: 2px;">   Java  </span>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px;margin: 2px;">   C Language  </span>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px;margin: 2px;">   HTML  </span>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px;margin: 2px;">  CSS  </span>
+                                <span class='d-inline-flex' name="skill">   Python  </span>
+                                <span class='d-inline-flex' name="skill">   Java  </span>
+                                <span class='d-inline-flex' name="skill">   C Language  </span>
+                                <span class='d-inline-flex' name="skill">   HTML  </span>
+                                <span class='d-inline-flex' name="skill">  CSS  </span>
 
                             </div>
                             <div class="item">
                                 <h3 class="level-title">Database Management</h3>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px;;margin: 2px;">   SQL  </span>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px;;margin: 2px;">   MySQL  </span>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px;;margin: 2px;">   SQLite </span>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px;;margin: 2px;">   NoSQL  </span>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px;;margin: 2px;">   MongoDB  </span>
+                                <span class='d-inline-flex' name="skill">   SQL  </span>
+                                <span class='d-inline-flex' name="skill">   MySQL  </span>
+                                <span class='d-inline-flex' name="skill">   SQLite </span>
+                                <span class='d-inline-flex' name="skill">   NoSQL  </span>
+                                <span class='d-inline-flex' name="skill">   MongoDB  </span>
 
                             </div>
                             <div class="item">
                                 <h3 class="level-title">Frameworks</h3>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px; margin: 2px;">   Flask  </span>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px; margin: 2px;">   unit testing  </span>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px; margin: 2px;">   PyTest  </span>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px; margin: 2px;">   Selenium(Python)  </span>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px; margin: 2px;">   Bootstrap  </span>
+                                <span class='d-inline-flex' name="skill">   Flask  </span>
+                                <span class='d-inline-flex' name="skill">   unit testing  </span>
+                                <span class='d-inline-flex' name="skill">   PyTest  </span>
+                                <span class='d-inline-flex' name="skill">   Selenium(Python)  </span>
+                                <span class='d-inline-flex' name="skill">   Bootstrap  </span>
                             </div>
                             <div class="item">
                                 <h3 class="level-title">Environments</h3>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px; margin: 2px;">Cloud Computing</span>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px; margin: 2px;">AWS</span>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px; margin: 2px;">GIT</span>
-                                <span class = 'd-inline-flex' name = "skill"style="font-size: 12px; border-style: solid;border-radius: 15px; margin: 2px;">GitHub</span>
+                                <span class='d-inline-flex' name="skill">   Cloud Computing   </span>
+                                <span class='d-inline-flex' name="skill">   AWS   </span>
+                                <span class='d-inline-flex' name="skill">   GIT   </span>
+                                <span class='d-inline-flex' name="skill">   GitHub   </span>
+                                <span class='d-inline-flex' name="skill">   Windows   </span>
+                                <span class='d-inline-flex' name="skill">   Linux   </span>
+
 
                             </div>
                             <p></p>
@@ -193,77 +267,99 @@
                     <h2 class="heading">Education</h2>
                     <div class="content">
                         <div class="item">
-                            <h3 class="title" style="font-size: 16px;"><i class="fas fa-graduation-cap"></i>&nbsp; B.Tech Electronics and&nbsp; Communication Engineering</h3>
-                            <h4 class="university">Pragati&nbsp; Engineering College, Surampalem<span class="year">&nbsp; (2019-2023)</span></h4>
+                            <h3 class="title" style="font-size: 16px;"><i class="fas fa-graduation-cap"></i>&nbsp;
+                                B.Tech - Electronics and&nbsp; Communication Engineering</h3>
+                            <h4 class="university">Pragati&nbsp; Engineering College, Surampalem<span class="year">&nbsp; (2019-2023)</span>
+                            </h4>
                         </div>
                     </div>
                 </div>
             </aside>
-                <aside class="languages aside section">
-                    <div class="shadow-sm section-inner rounded">
-                        <h2 class="heading">Languages</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item"><span class="title"><strong>Telugu:</strong></span><span class="level">Native Speaker <br class="visible-xs"><i class="fas fa-star" style="color: var(--bs-warning);"></i><i class="fas fa-star" style="color: var(--bs-warning);"></i><i class="fas fa-star" style="color: var(--bs-warning);"></i><i class="fas fa-star" style="color: var(--bs-warning);"></i><i class="fas fa-star" style="color: var(--bs-warning);"></i></span></li>
-                                <li class="item"><span class="title"><strong>English:</strong></span><span class="level">Professional Proficiency <br class="visible-sm visible-xs"><i class="fas fa-star" style="color: var(--bs-warning);"></i><i class="fas fa-star" style="color: var(--bs-warning);"></i><i class="fas fa-star" style="color: var(--bs-warning);"></i><i class="fas fa-star-half" style="color: var(--bs-warning);"></i></span></li>
-                            </ul>
-                        </div>
+            <aside class="languages aside section">
+                <div class="shadow-sm section-inner rounded">
+                    <h2 class="heading">Languages</h2>
+                    <div class="content">
+                        <ul class="list-unstyled">
+                            <li class="item"><span class="title"><strong>Telugu:</strong></span><span class="level">Native Speaker <br
+                                    class="visible-xs"><i class="fas fa-star" style="color: var(--bs-warning);"></i><i
+                                    class="fas fa-star" style="color: var(--bs-warning);"></i><i class="fas fa-star"
+                                                                                                 style="color: var(--bs-warning);"></i><i
+                                    class="fas fa-star" style="color: var(--bs-warning);"></i><i class="fas fa-star"
+                                                                                                 style="color: var(--bs-warning);"></i></span>
+                            </li>
+                            <li class="item"><span class="title"><strong>English:</strong></span><span class="level">Professional Proficiency <br
+                                    class="visible-sm visible-xs"><i class="fas fa-star"
+                                                                     style="color: var(--bs-warning);"></i><i
+                                    class="fas fa-star" style="color: var(--bs-warning);"></i><i class="fas fa-star"
+                                                                                                 style="color: var(--bs-warning);"></i><i
+                                    class="fas fa-star-half" style="color: var(--bs-warning);"></i></span></li>
+                        </ul>
                     </div>
-                </aside>
-                <aside class="blog aside section"></aside>
-                <aside class="list music aside section"></aside>
-                <aside class="list conferences aside section">
-                    <div class="shadow-sm section-inner rounded">
-                        <h2 class="heading">Credits</h2>
-                        <div class="content">
-                            <li style="color: #388bfd;">IonicaBizau - github feed</li>
-                        </div>
+                </div>
+            </aside>
+            <aside class="blog aside section"></aside>
+            <aside class="list music aside section"></aside>
+            <aside class="list conferences aside section">
+                <div class="shadow-sm section-inner rounded">
+                    <h2 class="heading">Credits</h2>
+                    <div class="content">
+                        <li style="color: #388bfd;">caseyscarborough - GitHub feed</li>
                     </div>
-                </aside>
-
-            </div>
-        </div>
-
+                </div>
+            </aside>
 
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div id="feed"></div>
-            </div>
+
+
+</div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="feed"></div>
         </div>
-<br><br>
+    </div>
+    <br><br>
     <footer class="footer">
         <div class="container text-center"><small class="copyright">Thank you for visiting</small></div>
     </footer>
 
-    <link rel="stylesheet" href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css">
-    <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css">
-    <script type="text/javascript" src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
+    <link href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css" rel="stylesheet">
+    <link href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/mustache@4.2.0/mustache.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
     <!-- if using dark theme add this in addition to the main CSS file -->
-    <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css">
+    <link href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"-->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/dark-mode-switch.min.js"></script>
-    <script src="assets/js/main.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/smart-forms.min.js"></script>
     <style>
-        span{
+        span {
             padding: 4px;
-            border-width: 0px
+
+        }
+
+        .d-inline-flex {
+            border-width: 0px;
+            color: #EFF2F699;
+            background-color: #FFFFFF1A;
+            font-size: 12px;
+            border-style: solid;
+            border-radius: 15px;
+            margin: 2px;
+        "
         }
 
     </style>
     <script>
-GitHubActivity.feed({
+        GitHubActivity.feed({
             username: "saipraveenkondapalli",
             //repository: "your-repo", // optional
             selector: "#feed",
-            limit:5, // optional
+            limit: 5, // optional
         });
 
     </script>
