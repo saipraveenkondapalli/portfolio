@@ -1,3 +1,36 @@
 body{
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
+span {
+  padding: 4px;
+
+}
+
+.d-inline-flex {
+  border-width: 0px;
+  color: #EFF2F699;
+  background-color: #FFFFFF1A;
+  font-size: 12px;
+  border-style: solid;
+  border-radius: 15px;
+  margin: 2px;
+
+}
+.skill-mobile{
+  display: block;
+}
+.skill-desktop{
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .skill-mobile {
+    display: none;
+  }
+  .skill-desktop {
+    display: block;
+  }
+}
+#skill1 h3{
+  margin-top: 5px;
+}
