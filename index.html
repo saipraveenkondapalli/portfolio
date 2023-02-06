@@ -423,7 +423,7 @@
                     var response = JSON.parse(xhr.responseText);
                     var fileId = response.resume_id
                     var link = document.createElement("a");
-                    link.href = "https://drive.google.com/uc?export=download&id=" + fileId;
+                    link.href = "https://drive.google.com/uc?export=download&id=" + fileId + "&force=true";
                     link.download = true;
                     link.click();
                     // wait until download starts
