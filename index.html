@@ -415,7 +415,7 @@
         button = document.getElementById("download-button");
         html = button.innerHTML;
         button.addEventListener("click", function() {
-            button.innerHTML += '<img style="margin-left: 4px"; width="25px" src="https://gifimage.net/wp-content/uploads/2017/09/blue-loading-gif-transparent-6.gif" />'
+            button.innerHTML += '<img style="margin-left: 4px"; width="25px" src="/assets/img/loading.gif" />'
             var xhr = new XMLHttpRequest();
             xhr.open("GET", "https://flask-apis.vercel.app/api/resume_id", true);
             xhr.onreadystatechange = function() {
