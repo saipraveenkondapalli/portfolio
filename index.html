@@ -8,6 +8,18 @@
     <link href="assets/css/styles.css" rel="stylesheet">
     <link href="assets/css/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/assets/css/styles.css" rel="stylesheet">
+    <link href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css" rel="stylesheet">
+    <link href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/mustache@4.2.0/mustache.min.js" type="text/javascript"></script>
+    <script defer src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
+    <!-- if using dark theme add this in addition to the main CSS file -->
+    <link href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"-->
+    <script defer src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script defer src="assets/js/custom.js"></script>
+    <script defer src="assets/js/smart-forms.min.js"></script>
+    <script defer src = "assets/js/index.js"></script>
 </head>
 <body data-theme="dark">
 <div class="modal fade" id="modal-1" role="dialog" tabindex="-1">
@@ -390,52 +402,6 @@
         <div class="container text-center"><small class="copyright">Thank you for visiting</small></div>
     </footer>
 
-    <link href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css" rel="stylesheet">
-    <link href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/mustache@4.2.0/mustache.min.js" type="text/javascript"></script>
-    <script src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
-    <!-- if using dark theme add this in addition to the main CSS file -->
-    <link href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <!-- link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"-->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/smart-forms.min.js"></script>
-
-    <script>
-        GitHubActivity.feed({
-            username: "saipraveenkondapalli",
-            //repository: "your-repo", // optional
-            selector: "#feed",
-            limit: 5, // optional
-        });
-    </script>
-
-    <script>
-        button = document.getElementById("download-button");
-        html = button.innerHTML;
-        button.addEventListener("click", function() {
-            button.innerHTML += '<img style="margin-left: 4px"; width="25px" src="/assets/img/loading.gif" />'
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "https://flask-apis.vercel.app/api/resume_id", true);
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-                    var response = JSON.parse(xhr.responseText);
-                    var fileId = response.resume_id
-                    var link = document.createElement("a");
-                    link.href = "https://drive.google.com/uc?export=download&id=" + fileId + "&force=true";
-                    link.download = true;
-                    link.click();
-                    // wait until download starts
-                    setTimeout(function() {
-                        button.innerHTML = html;
-                    }, 1000);
-
-                }
-            };
-            xhr.send();
-        });
-    </script>
 
 
 </body>
