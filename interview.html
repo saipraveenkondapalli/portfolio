@@ -9,22 +9,14 @@
     <link rel="stylesheet" href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css">
     <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css">
     <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css">
+    <script defer src="assets/js/navbar.js"></script>
     <title>Interview Prep Pro</title>
 </head>
 
 <body style="background-color: #353739;">
-    <!--nav class="navbar navbar-light navbar-expand-md" style="color: white;background: black;">
-        <div class="container-fluid"><a class="navbar-brand" href="#" style="color: white;">Sai Praveen</a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1" style="color: white;"><span class="visually-hidden" style="color: white;">Toggle navigation</span><span class="navbar-toggler-icon" style="color: white;"></span></button>
-            <div id="navcol-1" class="collapse navbar-collapse" style="color: white;">
-                <ul class="navbar-nav" style="color: white;">
-                    <li class="nav-item" style="color: white;"><a class="nav-link active" href="#" style="color: white;">Skills</a></li>
-                    <li class="nav-item" style="color: white;"><a class="nav-link" href="#" style="color: white;">Projects</a></li>
-                    <li class="nav-item" style="color: white;"><a class="nav-link" href="#" style="color: white;">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav-->
+<div id ="navbar">
+
+</div>
     <h1 id="weblink" class="projectname" style="text-align: center;color: var(--bs-yellow);padding: 41px;" onclick="window.open(&#39;https://www.leetcodeproblems.tech&#39;, &#39;_blank&#39;);">Interview Prep Pro</h1>
     <div class="container align-items-center">
         <h2 style="color: var(--bs-yellow);">Tech Stack</h2><img class="rounded img-fluid" src="assets/img/tech-stack-interview-prep-pro.png" alt="tech stack" style="padding: 15px;" />
@@ -63,6 +55,7 @@
     }
 </style>
 <script>
+
     var targetNode = document.body;
     var config = { attributes: true, childList: true, subtree: true };
     var observer = new MutationObserver(function(mutationsList) {
@@ -78,6 +71,6 @@
     });
     observer.observe(targetNode, config);
   </script>
-</body>
 
+</body>
 </html>
