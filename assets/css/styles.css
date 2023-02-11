@@ -8,8 +8,8 @@ span {
 
 .d-inline-flex {
   border-width: 0px;
-  color: #EFF2F699;
-  background-color: #FFFFFF1A;
+  color: white;
+  background-color: green;
   font-size: 12px;
   border-style: solid;
   border-radius: 15px;
