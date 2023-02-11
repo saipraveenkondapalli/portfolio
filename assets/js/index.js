@@ -10,7 +10,11 @@
     button = document.getElementById("download-button");
     html = button.innerHTML;
     button.addEventListener("click", function() {
-    button.innerHTML += '<img style="margin-left: 4px"; width="25px" src="/assets/img/loading.gif" />'
+    // get the image with id loading
+    var loading = document.getElementById("loading");
+    // REMOVE THE hidden attribute
+    loading.removeAttribute("hidden");
+
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://flask-apis.vercel.app/api/resume_id", true);
     xhr.onreadystatechange = function() {
@@ -23,7 +27,9 @@
     link.click();
     // wait until download starts
     setTimeout(function() {
-    button.innerHTML = html;
+    // set the image to hidden
+    loading.setAttribute("hidden", true);
+
 }, 1000);
 
 }
