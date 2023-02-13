@@ -21,6 +21,7 @@
     <script defer src="assets/js/smart-forms.min.js"></script>
     <script defer src = "assets/js/index.js"></script>
     <script  src="assets/js/navbar.js"></script>
+    <script defer src="assets/js/leetcode.js"></script>
 </head>
 
 <body data-theme="dark">
@@ -245,7 +246,7 @@
                     </div>
                 </div>
             </section>
-            <section class="projects section"></section>
+
             <section class="experience section">
                 <div class="shadow-sm section-inner rounded">
                     <h2 class="heading">Work Experience</h2>
@@ -264,6 +265,55 @@
                             <h3 class="title">Software Engineer - <span class="place"><a href="#">eBay</a></span><span class="year">(2018 - 2019)</span></h3>
                             <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
                         </div-->
+                    </div>
+                </div>
+            </section>
+            <section class="projects section">
+                <div class="shadow-sm section-inner rounded">
+                    <h2 class="heading">Leetcode Profile</h2>
+                    <div id="row1" class="row" style="margin-bottom: 26px;">
+                        <div id="col1" class="col" style="background: #191d21;padding: 12px;border-radius: 15px;">
+                            <h1 style="color: white;">Total Solved</h1>
+                            <h1 style="color: #e1be0c;"><span id="problemsSolved" style="color:#e1be0c"></span></h1>
+                        </div>
+                        <div id="col2" class="col offset-1" style="background: #191d21;padding: 12px;border-radius: 15px;">
+                            <h2 style="color: white;">Total Active: <span id="active_days" style="color:#e1be0c"></span></h2>
+                            <h2 style="color: white;">Max Steak: <span id="streak" style="color:#e1be0c"></span></h2>
+                        </div>
+                    </div>
+                    <div class="card" style="border-style: none;">
+                        <div class="card-body">
+                            <h4 class="card-title">Total Questions solved </h4>
+                            <h5 class="card-title">Recently solved problems</h5>
+                            <div class="table-responsive" style="color: var(--color-calendar-graph-day-bg);">
+                                <table class="table">
+
+                                    <tbody id = "leetcode" >
+                                    <img  id= "leetcode-loading"style="margin-left: 4px"; width="25px" src="/assets/img/loading-2.gif"/>
+                                    <!--tr>
+                                        <td>sdsfsdbfbsd</td>
+                                        <td class="text-center" >Yesterday </td>
+                                    </tr>
+                                    <tr>
+                                        <td >Cell 3</td>
+                                        <td class="text-center">Cell 4</td>
+                                    </tr-->
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+                    <h4 class="heading" style="margin-top: 15px";>Leetcode Calender</h4>
+                    <div class="card-body" style="padding: 10px" id="cal">
+
+                    <div class="content">
+
                     </div>
                 </div>
             </section>
@@ -385,8 +435,6 @@
 
         </div>
     </div>
-
-
 </div>
 </div>
 <div class="container">

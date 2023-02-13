@@ -34,3 +34,52 @@ span {
 #skill1 h3{
   margin-top: 5px;
 }
+
+
+.table td{
+    border-style: none;
+    color: white;
+}
+tr{
+  border-style: none;
+
+}
+
+.table-responsive{
+  /*overflow-x: scroll; */
+  overflow-y: scroll;
+  max-height:200px;
+;
+}
+.card-body{
+ background: rgb(25,29,33);"
+}
+
+
+
+#cal{
+  max-width: fit-content;
+  overflow-x: scroll;
+
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+
+
+}
+@media only screen and (min-width: 768px) {
+  #cal {
+    overflow: hidden;
+  }
+}
+@media (max-width: 767px) {
+  #row1 {
+    flex-wrap: wrap;
+  }
+  #col1, #col2 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #col2 {
+    margin-left: 5px;
+  }
+}
