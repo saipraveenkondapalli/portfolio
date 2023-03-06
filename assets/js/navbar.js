@@ -7,10 +7,10 @@
 });
 
     function navbar(location){
-        if (window.location.pathname == "/index.html/"){
+        if (window.location.pathname == "/"){
             document.getElementById(location).scrollIntoView();
         }
         else{
-            window.location.href = "/index.html" + "#" + location;
+            window.location.href =  "#" + location;
         }
     }
