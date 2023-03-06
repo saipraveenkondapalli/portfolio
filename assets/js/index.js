@@ -1,3 +1,18 @@
+//send a request to web?id=gpm2NslgEqdhyBs84cs2zAfvcrgKh64Gtjbdex
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "http://myapp.local:5000/web?id=gpm2NslgEqdhyBs84cs2zAfvcrgKh64Gtjbdex", true);
+    xhr.onreadystatechange = function() {
+    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+    console.log(xhr.responseText);
+    }
+    else{
+    console.log("error", xhr.status, xhr.responseText);
+    }
+    }
+    xhr.send();
+
+
+
 // Author: Sai Praveen Kondapalli Github Activity Feed
     GitHubActivity.feed({
     username: "saipraveenkondapalli",
