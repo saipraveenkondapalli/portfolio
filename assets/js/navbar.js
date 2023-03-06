@@ -11,6 +11,6 @@
             document.getElementById(location).scrollIntoView();
         }
         else{
-            window.location.href =  "#" + location;
+            window.location.href = '/'+ "#" + location;
         }
     }
