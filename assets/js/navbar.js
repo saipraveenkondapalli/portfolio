@@ -1,5 +1,4 @@
-
-    // Fetch the navigation bar HTML file
+// Fetch the navigation bar HTML file
     fetch('navbar.html')
     .then(response => response.text())
     .then(data => {
@@ -7,15 +6,11 @@
     document.getElementById('navbar').innerHTML = data;
 });
 
-function section(tag){
-    // if window is in home page then scroll to the section else redirect to home page and then scroll to the section
-    if (window.location.pathname == "/"){
-        document.getElementById(tag).scrollIntoView();
-
+    function navbar(location){
+        if (window.location.pathname == "/index.html/"){
+            document.getElementById(location).scrollIntoView();
+        }
+        else{
+            window.location.href = "/index.html" + "#" + location;
+        }
     }
-    else{
-        window.location.href = "/";
-
-
-    }
-}
