@@ -59,13 +59,10 @@ function epochToDateString(epochTime) {
         } else {
             return daysAgo + " days ago";
         }
-    } else if (diff < 2592000) {
-        return "A week ago";
     } else {
         return then.toLocaleDateString();
     }
 }
-
 
 
 
