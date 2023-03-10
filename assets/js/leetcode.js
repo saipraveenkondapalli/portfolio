@@ -3,7 +3,7 @@ function leetcode(name){
     //xhhtp request to http://192.168.55.102:5000/api/leetcode/ and display the result in div with id="leetcode"
     var xhr = new XMLHttpRequest();
     leetcode_image = document.getElementById("leetcode-loading");
-    xhr.open("GET", "https://apis.saipraveen.software/api/leetcode/?username=" + name, true);
+    xhr.open("GET", "https://flask-apis.vercel.app/api/leetcode/?username=" + name, true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE & xhr.status === 200) {
             var response = JSON.parse(this.responseText);

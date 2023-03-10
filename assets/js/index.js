@@ -1,6 +1,6 @@
 //send a request to web?id=gpm2NslgEqdhyBs84cs2zAfvcrgKh64Gtjbdex
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://flask-apis.vercel.app/web?id=gpm2NslgEqdhyBs84cs2zAfvcrgKh64Gtjbdex", true);
+    xhr.open("GET", "https://flask-apis.vercel.app/api/web?id=gpm2NslgEqdhyBs84cs2zAfvcrgKh64Gtjbdex", true);
     xhr.onreadystatechange = function() {
     if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
     console.log(xhr.responseText);
