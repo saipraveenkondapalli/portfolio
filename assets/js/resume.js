@@ -17,6 +17,6 @@ function resume_tracker(id) {
 // get id from URL param 'id'
 var urlParams = new URLSearchParams(window.location.search);
 var id = urlParams.get('id');
-// remove  first character from id
-id = id.substring(1);
 resume_tracker(id);
+
+
