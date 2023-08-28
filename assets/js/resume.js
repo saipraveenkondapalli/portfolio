@@ -1,7 +1,7 @@
 
 function resume_tracker(id) {
     // using fetch API
-    let promise = fetch("https://flask-apis.vercel.app/api/tracker?id=" + id)
+    fetch("https://flask-apis.vercel.app/api/tracker?id=" + id)
         .then(response => response.json())
         .then(data => {
                 console.log(data);
@@ -24,7 +24,6 @@ const id = urlParams.get('id');
 if (id != null) {
     resume_tracker(id);
 }
-
 
 
 const notification = document.querySelector('.notification');
