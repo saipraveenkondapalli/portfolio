@@ -33,13 +33,17 @@ const notification = document.querySelector('.notification');
 function dismissMessage() {
     // remove the .received class from the .notification widget
     notification.classList.remove('received');
+    document.getElementById('notification').style.display = 'none';
+
 
 }
 
 // function showing the message
 function showMessage() {
     // add a class of .received to the .notification container
+    document.getElementById('notification').style.display = 'block';
     notification.classList.add('received');
+
 
     // attach an event listener on the button to dismiss the message
     // include the once flag to have the button register the click only one time
