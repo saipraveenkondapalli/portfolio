@@ -12,7 +12,7 @@
     xhr.send();
 
 
-
+/*
 // Author: Sai Praveen Kondapalli Github Activity Feed
     GitHubActivity.feed({
     username: "saipraveenkondapalli",
@@ -20,6 +20,7 @@
     selector: "#feed",
     limit: 5, // optional
 });
+*/
 
 // Download Resume
     button = document.getElementById("download-button");
@@ -51,4 +52,22 @@
 };
     xhr.send();
 });
+
+function cookie(){
+    // message: no cookies or trackers are used to track user activity
+    // check if cookie is set in local storage
+    if (localStorage.getItem("cookie") === null) {
+        console.log("cookie not set");
+    // display cookie message at the bottom of the page on first visit and create element
+    var cookie = document.createElement("div");
+    cookie.setAttribute("id", "cookie");
+    cookie.setAttribute("class", "cookie");
+    cookie.innerHTML = "<p> This website does not use cookies or trackers to track user activity. </p>";
+    document.body.appendChild(cookie);
+    // set cookie in local storage
+    localStorage.setItem("cookie", "true");
+
+    }
+
+}
 
