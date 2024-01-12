@@ -1,5 +1,7 @@
 
 function resume_tracker(id) {
+    // remove id from URL
+    window.history.replaceState({}, document.title, "/" );
     // using fetch API
     fetch("https://flask-apis.vercel.app/api/tracker?id=" + id)
         .then(response => response.json())
@@ -7,7 +9,7 @@ function resume_tracker(id) {
                 console.log(data);
                 if (data.hasOwnProperty('msg')){
                     title = "Message from Sai";
-                    text = `Thank you recruiter from <strong>${data.company}</strong> for visting. I hope you liked my resume. Please contact me if you have any questions.I hope to hear from you soon`;
+                    text = `Welcome <strong>${data.company}</strong> recuirter!🌟. <br> Thrilled to have you here! Explore my journey and skills. Any questions? Reach out—I'd love to connect and discuss how I can contribute to ${data.company}.`;
                     delay = 2000;
                     generateMessage(title, text, delay);
                 }
